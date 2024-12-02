@@ -1,0 +1,14 @@
+<nav class="flex items-center justify-between">
+  <a class="font-semibold text-[34px] text-[#5f01d3] poppins">Zylo</a>
+  <div class="flex items-center ">
+    @if (this.weatherData){
+      <img  [src]="weatherIconUrl" alt="Weather icon" />
+      <div>
+        <p class="text-[14px]">{{ weatherData.main.temp }} °C</p>
+        <h3 class="font-light text-[10px]">{{ weatherData.name }}</h3>
+      </div>
+
+
+    }
+  </div>
+</nav>
