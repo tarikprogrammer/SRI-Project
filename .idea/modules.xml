@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SRI-Project.iml" filepath="$PROJECT_DIR$/SRI-Project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/model-api/model-api.iml" filepath="$PROJECT_DIR$/model-api/model-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/python-indecationData/python-indecationData.iml" filepath="$PROJECT_DIR$/python-indecationData/python-indecationData.iml" />
       <module fileurl="file://$PROJECT_DIR$/zylo-frontend.iml" filepath="$PROJECT_DIR$/zylo-frontend.iml" />
     </modules>
   </component>
