@@ -2,7 +2,8 @@
   <a class="font-semibold text-[34px] text-[#5f01d3] poppins">Zylo</a>
   <div class="flex items-center ">
     @if (this.weatherData){
-      <img  [src]="weatherIconUrl" alt="Weather icon" />
+     <!-- <img  [src]="weatherIconUrl" alt="Weather icon" />-->
+      <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" class="w-[50px]">
       <div>
         <p class="text-[14px]">{{ weatherData.main.temp }} °C</p>
         <h3 class="font-light text-[10px]">{{ weatherData.name }}</h3>
