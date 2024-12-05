@@ -1,36 +1,36 @@
 indexMapping = {
     "properties":{
-        "Club Name":{
+        "Nom de club":{
             "type":"text"
         },
-        "City":{
+        "Ville":{
             "type":"text"
         },
-        "Stadium":{
+        "Terrain":{
             "type":"text"
         },
-        "Founded Year":{
+        "Date de creation":{
             "type":"text"
         },
-        "Titles Won":{
+        "Titres gagnés":{
             "type":"text"
         },
-        "Club President":{
+        "President":{
             "type":"text"
         },
-        "Coach":{
+        "entraineur":{
             "type":"text"
         },
-        "Top Scorer (Last Season)":{
+        "Butteur":{
             "type":"text"
         },
-        "Main Rival":{
+        "Ennemi":{
             "type":"text"
         },
-        "Descriptions":{
+        "Description":{
             "type":"text"
         },
-        "DescriptionVector":{
+        "Vector":{
             "type":"dense_vector",
             "dims": 768,
             "index":True,
@@ -39,3 +39,37 @@ indexMapping = {
 
     }
 }
+
+"""indexMapping = {
+    "properties":{
+        "Round":{
+            "type":"text"
+        },
+        "Equipe1":{
+            "type":"text"
+        },
+        "Equipe2":{
+            "type":"text"
+        },
+        "date":{
+            "type":"text"
+        },
+        "Resultat":{
+            "type":"text"
+        },
+
+        "Equipe_1_vector":{
+            "type":"dense_vector",
+            "dims": 768,
+            "index":True,
+            "similarity": "l2_norm"
+        },
+        "Equipe_2_vector":{
+            "type":"dense_vector",
+            "dims": 768,
+            "index":True,
+            "similarity": "l2_norm"
+        }
+
+    }
+}"""
