@@ -22,7 +22,5 @@ Use the `BLANK_README.md` to get started.
 
 
 
-<div style="display: flex ;align-items: center;gap: 10px">
-   <span>*</span><img src="assets/tarik.png" style="display:inline-block;width: 40px;height: 40px;border-radius: 50%">  <span>Tarik Belaid</span>
-</div>
+![Tarik Belaid](assets/tarik.png)
 
