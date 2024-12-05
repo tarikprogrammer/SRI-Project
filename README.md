@@ -2,7 +2,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Zylo SRI
 
-<img src="assets/image1.png">
+<img src="assets/image1.png" style="display: inline-block;width: 200px;border-radius: 20px">
 
 
 Here's why:
@@ -22,7 +22,7 @@ Use the `BLANK_README.md` to get started.
 
 
 
-* <img src="assets/tarik.png" style="width: 40px;height: 40px;border-radius: 50%"> ---> ### Tarik Belaid
-* <img src="assets/tarik.png" style="width: 40px;height: 40px;border-radius: 50%"> ---> ### Tarik Belaid
-* <img src="assets/tarik.png" style="width: 40px;height: 40px;border-radius: 50%"> ---> ### Tarik Belaid
+* <img src="assets/tarik.png" style="display:inline-block;width: 40px;height: 40px;border-radius: 50%"> ---> Tarik Belaid
+* <img src="assets/tarik.png" style="width: 40px;height: 40px;border-radius: 50%"> --->  Tarik Belaid
+* <img src="assets/tarik.png" style="width: 40px;height: 40px;border-radius: 50%"> ---> Tarik Belaid
 
