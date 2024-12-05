@@ -24,3 +24,10 @@ Use the `BLANK_README.md` to get started.
 
 ![Tarik Belaid](assets/tarik.png)
 
+
+
+
+<div align="center">
+   <img src="assets/tarik.png" width="100" height="100" style="border-radius: 50%;" alt="Tarik Belaid">
+   <h3>Tarik Belaid</h3>
+</div>
