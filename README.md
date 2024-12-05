@@ -22,7 +22,7 @@ Use the `BLANK_README.md` to get started.
 
 
 
-* <img src="assets/tarik.png" style="display:inline-block;width: 40px;height: 40px;border-radius: 50%"> ---> Tarik Belaid
-* <img src="assets/tarik.png" style="width: 40px;height: 40px;border-radius: 50%"> --->  Tarik Belaid
-* <img src="assets/tarik.png" style="width: 40px;height: 40px;border-radius: 50%"> ---> Tarik Belaid
+<div style="display: flex ;align-items: center;gap: 10px">
+   <span>*</span><img src="assets/tarik.png" style="display:inline-block;width: 40px;height: 40px;border-radius: 50%">  Tarik Belaid
+</div>
 
