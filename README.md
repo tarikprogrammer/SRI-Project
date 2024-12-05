@@ -9,7 +9,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Zylo SRI
 
-<img src="assets/image1.png" style="display: inline-block;border-radius: 20px">
+<img src="assets/image1.png" width="2600">
 
 
 Here's why:
