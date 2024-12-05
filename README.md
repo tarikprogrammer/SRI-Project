@@ -2,7 +2,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Zylo SRI
 
-<img src="assets/image1.png" style="display: inline-block;width: 200px;border-radius: 20px">
+<img src="assets/image1.png" style="display: inline-block;border-radius: 20px">
 
 
 Here's why:
