@@ -7,8 +7,8 @@ from sentence_transformers import SentenceTransformer
 app = Flask(__name__)
 CORS(app)
 es = Elasticsearch(
-    "https://192.168.63.251:9200/",
-    basic_auth=("elastic", "a4TGsZ3hZzRdI5fIU*dw"),
+    "https://localhost:9200/",
+    basic_auth=("elastic", "-xfouEshAQuhtQdoUS=Z"),
     verify_certs=False
 
 
@@ -16,7 +16,7 @@ es = Elasticsearch(
 
 model = SentenceTransformer('all-mpnet-base-v2')
 team_names = [
-    "Wydad", "FUS Rabat", "Raja casablanca", "Berkane", "ASFAR",
+    "Wydad", "FUS Rabat", "Raja Casablanca", "Berkane", "ASFAR",
     "Chabab Mohammedia", "FAR Rabat", "Maghreb Tetouan", "Olympique de Safi",
     "Union Touarga", "Hassania Agadir", "Renaissance Zemamra", "Mouloudia Oujda",
     "Youssoufia Berrechid", "Maghreb Fez"
@@ -60,34 +60,34 @@ def search_teams():
             query = {
                 "field": "Equipe_1_vector",
                 "query_vector": vector_of_input_keyword,
-                "k": es.count(index="botola-v12")['count'],
+                "k": es.count(index="match-indexing")['count'],
                 "num_candidates": 500
             }
             query1 = {
                 "field": "Vector",
                 "query_vector": vector_of_input_keyword,
-                "k": es.count(index="botola-v13")['count'],
+                "k": es.count(index="equipev1-indexing")['count'],
                 "num_candidates": 500
             }
 
             res = es.knn_search(
-                index="botola-v12",
+                index="match-indexing",
                 knn=query,
                 _source=["Round", "Equipe 1", "Equipe 2", "Resultat"]
             )
             if(data):
                 res1 = es.knn_search(
-                    index="botola-v15",
+                    index="equipev1-indexing",
                     knn=query1,
-                    _source=["Club Name"]+[d for d in data]
+                    _source=["Nom de club"]+[d for d in data]
                 )
                 results_data = res1["hits"]["hits"][0]['_source']
+                print(results_data)
 
 
 
-
-
-            results_team = res["hits"]["hits"]
+            if(teams):
+               results_team = res["hits"]["hits"]
 
 
 
@@ -110,8 +110,13 @@ def search_teams():
                     else:
                         if team1.lower() == equipe_1.lower() or team2.lower() == equipe_1.lower():
                             filtered_results.append(source)
+            if(data and filtered_results):
+                return jsonify({"results_match": filtered_results,"result_club":results_data})
+            elif(data):
+                return jsonify({"result_club":results_data})
+            else:
+                return jsonify({"results_match": filtered_results})
 
-        return jsonify({"results_match": filtered_results,"result_club":results_data})
 
 if __name__ == '__main__':
     app.run(debug=True)
