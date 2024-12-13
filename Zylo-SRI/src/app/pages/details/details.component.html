@@ -1,0 +1,41 @@
+<div class="w-[80%] mx-auto mt-20 border p-10 rounded-2xl shadow-sm ">
+ @if(this.data.currentData){
+   <h1 class="text-2xl font-bold text-[#473dbd] ">{{this.data.currentData['Nom de club']+' de Maroc'}}</h1>
+
+
+   @if (this.data.currentData['President']){
+     <p class="mt-6 text-xl text-gray-800">
+       {{this.data.currentData['President']}}
+     </p>
+   } @else if (this.data.currentData['Ennemi']){
+     <p class="mt-6 text-xl text-gray-800">
+       {{this.data.currentData['Ennemi']}}
+     </p>
+
+   } @else if (this.data.currentData['Description']){
+     <p class="mt-6 text-xl text-gray-800">
+       {{this.data.currentData['Description']}}
+     </p>
+   }
+   @else if (this.data.currentData['Terrain']){
+     <p class="mt-6 text-xl text-gray-800">
+       {{this.data.currentData['Terrain']}}
+     </p>
+   }
+   @else if (this.data.currentData['Date de creation']){
+     <p class="mt-6 text-xl text-gray-800">
+       {{this.data.currentData['Date de creation']}}
+     </p>
+   }
+   @else if (this.data.currentData['entraineur']){
+     <p class="mt-6 text-xl text-gray-800">
+       {{this.data.currentData['entraineur']}}
+     </p>
+   }
+   @else if (this.data.currentData['Butteur']){
+     <p class="mt-6 text-xl text-gray-800">
+       {{this.data.currentData['Butteur']}}
+     </p>
+   }
+ }
+</div>
