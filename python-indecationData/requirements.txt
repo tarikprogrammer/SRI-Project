@@ -1,0 +1,6 @@
+flask
+flask-cors
+elasticsearch
+sentence-transformers
+numpy
+scikit-learn
